@@ -1,0 +1,65 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background: url(./images/calbg.jpeg);
+}
+
+.container {
+    width: 430px;
+    padding: 30px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: transparent;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8),
+        0 0 30px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+}
+
+.input_field input {
+    width: 100%;
+    padding: 10px;
+}
+
+.input_field input[type="text"] {
+    text-align: right;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+
+.numbers input[type="button"] {
+    margin: auto;
+    width: 90%;
+    border-radius: 25px;
+    border: none;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 20px;
+    gap: 10px;
+}
+
+.numbers input {
+    padding: 10px;
+}
+
+@media (max-width:425px) {
+    .container {
+        width: auto;
+    }
+}
